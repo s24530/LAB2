@@ -9,10 +9,20 @@ int main()
     std::cin>>b;
     std::cout<< "Podaj c: ";
     std::cin>>c;
-    for (int i=a; i<b; i++)
+    if(c==0)
     {
-        if ( i%c==0)
-        std::cout<< i << "\n";
+        std::cerr<<"Nieprawidłowa wartość c, nie można dzielić przez zero!\n";
+        return 1;
     }
+    else
+    {
+        for (int i=a; i<b; i++)
+        {
+            if ( i%c==0)
+            {
+                std::cout<< i << "\n";
+            }    
+        }
+    }    
     return 0;
 }
