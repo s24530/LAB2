@@ -28,15 +28,19 @@ int main()
         while (s>=a && s<b)
         {
             std::cout<< a << "\n";
-            ++a;
+            a+=s;
         }
     }
     else
     {
+        if(s>b)
+        {
+            std::cout<<" s nie może być większe od b";
+        }    
         while (s>=a && s<b)
         {
             std::cout<< a << "\n";
-            ++a;
+            a+=s;
         }
     }
     return 0;
