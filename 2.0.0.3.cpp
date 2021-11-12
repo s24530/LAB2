@@ -25,23 +25,37 @@ int main()
         {
             std::cout<<" s nie może być większe od b";
         }    
-        while (s>=a && s<b)
+        while (a<b)
         {
             std::cout<< a << "\n";
             a+=s;
         }
-    }
-    else
-    {
-        if(s>b)
+        /*Alternatywne rozwiązanie przy użyciu pętli for*/
+        /*
+        for(int i=a; i<b; i+=s)
         {
-            std::cout<<" s nie może być większe od b";
-        }    
-        while (s>=a && s<b)
-        {
-            std::cout<< a << "\n";
-            a+=s;
+            std::cout<< i <<"\n";
         }
+        */
+        }
+        else
+        {
+            if(s>b)
+            {
+                std::cout<<" s nie może być większe od b";
+            }    
+            while (a<b)
+            {
+                std::cout<< a << "\n";
+                a+=s;
+            }
+             /*Alternatywne rozwiązanie przy użyciu pętli for*/
+                /*
+                for(int i=a; i<b; i+=s)
+                {
+                    std::cout<< i <<"\n";
+                }
+                */
     }
     return 0;
 }
